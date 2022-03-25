@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,500;1,700;1,900&display=swap");
+
+/*=================== navbar style ================== */
+.navbar {
+  background-color: rgb(201, 200, 200);
+}
+.nav-wrapper {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav-wrapper img {
+  width: 100px;
+}
+
+.menu-wrapper a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 24px;
+  color: black;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.menu-wrapper a:hover {
+  color: #df9e25;
+}
+
+/*============== media query in navbar =============== */
+/* @media screen and (max-width: 420) {
+  .menu-wrapper a {
+    display: none;
+  }
+} */
