@@ -64,6 +64,8 @@
   background-color: #c18107;
   color: #ffffff;
 }
+
+/*============= media query for responsive =============*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .course {
     display: grid;

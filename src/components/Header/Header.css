@@ -32,6 +32,9 @@
   .menu-wrapper a {
     display: none;
   }
+  .navbar img {
+    width: 20%;
+  }
   .banner h1 {
     font-size: 38px;
   }
