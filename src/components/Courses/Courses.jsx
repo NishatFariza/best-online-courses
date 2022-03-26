@@ -20,6 +20,14 @@ const Courses = () => {
 
     }
 
+    const clearCart = () =>{
+        setCart([])
+    }
+    const randomItem = () =>{
+       const random = [cart[Math.floor(Math.random() * cart.length)]]
+       setCart(random)
+    }
+
 
     return (
         <div className='main-wrapper'>
@@ -45,8 +53,8 @@ const Courses = () => {
                             {
                                 cart.map(cart => <Carts cart={cart} key={cart.id}></Carts>)
                             }
-                        <button className='reset-btn'>Reset All</button>
-                        <button className='random-btn'>Random</button>
+                        <button onClick={clearCart} className='reset-btn'>Reset All</button>
+                        <button onClick={randomItem} className='random-btn'>Random</button>
                         </div>
                     </div>
                 </div>

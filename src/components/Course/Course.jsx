@@ -11,7 +11,7 @@ const Course = (props) => {
         <div className='card'>
             <div className='image-wrap'><img src={picture} alt="" /></div>
             <div className='course-info'>
-            <h2>{name}</h2>
+            <h3>{name}</h3>
             <p>Price: {balance}</p>
             </div>
             <button onClick={ () => handleAddToCart(course)} className='cart-btn'>
