@@ -20,10 +20,11 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 18px;
-  margin-right: 24px;
+  margin-right: 28px;
   color: black;
   font-weight: 500;
   transition: 0.5s;
+  letter-spacing: -0.1px;
 }
 
 .menu-wrapper a:hover {
