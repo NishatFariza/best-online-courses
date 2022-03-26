@@ -1,0 +1,39 @@
+.about-wrapper {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 80px 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-wrapper h2 {
+  font-size: 32px;
+  font-weight: 700;
+  border-bottom: 4px solid #c18107;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.about-item {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.about-question {
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.question-icon {
+  color: #c18107;
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+.strong-text {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.about-ans {
+  font-size: 18px;
+  color: #666;
+}
