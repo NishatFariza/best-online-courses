@@ -28,8 +28,8 @@
 }
 
 /*============== media query in navbar =============== */
-/* @media screen and (max-width: 420) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .menu-wrapper a {
     display: none;
   }
-} */
+}

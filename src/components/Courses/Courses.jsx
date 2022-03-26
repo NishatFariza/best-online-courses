@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Carts from '../Carts/Carts';
 import Course from '../Course/Course';
+import Swal from 'sweetalert2';
 import './Courses.css'
 
 const Courses = () => {
@@ -15,8 +16,24 @@ const Courses = () => {
 
     const handleAddToCart = (course) =>{
         //   console.log(course);
-          setCart([...cart, course])
-        //   console.log(cart);
+        if(cart.length < 4){
+            const cartCount = cart.findIndex(count => count.id === course.id);
+            if(cartCount > -1){
+                Swal.fire({
+                    icon: 'error',
+                    title: `"${course.name}" Aleadey added`,
+                })
+            }
+            else{
+                setCart([...cart, course])
+            }
+        }
+        else{
+            Swal.fire({
+                icon: 'error',
+                title: 'You cannot Add more than 4',
+            })
+        }
 
     }
 

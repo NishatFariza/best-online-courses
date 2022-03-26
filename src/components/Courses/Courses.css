@@ -64,3 +64,16 @@
   background-color: #c18107;
   color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .course {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  .course-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 28px;
+    margin: 30px;
+  }
+}
