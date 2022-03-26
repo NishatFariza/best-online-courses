@@ -4,8 +4,11 @@
   font-weight: 700;
   font-size: 32px;
   font-family: "Roboto", sans-serif;
+  padding-top: 50px;
 }
-
+.banner h1 {
+  font-size: 48px;
+}
 .orange-color {
   color: #c18107;
 }
