@@ -4,12 +4,21 @@ import './Courses.css'
 
 const Courses = () => {
     const [courses, setCourses] = useState([])
+    const [cart, setCart] =useState([])
 
     useEffect( () => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setCourses(data))
     }, [])
+
+    const handleAddToCart = (course) =>{
+        //   console.log(course);
+          setCart([...cart, course])
+          console.log(cart);
+    }
+
+
     return (
         <div className='main-wrapper'>
                <div className='banner'>
@@ -22,13 +31,18 @@ const Courses = () => {
                     {
                         courses.map(course => <Course course={course}
                         key={course.id}
+                        handleAddToCart={handleAddToCart}
                         >
 
                         </Course>)
                     }
                     </div>
                     <div className='cart-wrapper'>
-                        <h2>This is cart</h2>
+                        <h4>Your Course</h4>
+                        <div>
+                        <button className='reset-btn'>Reset All</button>
+                        <button className='random-btn'>Random</button>
+                        </div>
                     </div>
                 </div>
             

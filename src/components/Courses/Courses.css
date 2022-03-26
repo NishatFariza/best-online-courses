@@ -27,3 +27,34 @@
   grid-gap: 28px;
   margin: 30px;
 }
+.cart-wrapper {
+  text-align: center;
+}
+.cart-wrapper h4 {
+}
+.reset-btn {
+  margin-right: 10px;
+  border-radius: 7px;
+  border: none;
+  padding: 10px 22px;
+  transition: 0.6s;
+  font-size: 16px;
+  font-weight: 600;
+}
+.reset-btn:hover {
+  background-color: #d82148;
+  color: #ffffff;
+}
+.random-btn {
+  margin-right: 10px;
+  border-radius: 7px;
+  border: none;
+  padding: 10px 22px;
+  transition: 0.6s;
+  font-size: 16px;
+  font-weight: 600;
+}
+.random-btn:hover {
+  background-color: #c18107;
+  color: #ffffff;
+}
