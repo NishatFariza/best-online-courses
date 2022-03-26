@@ -32,4 +32,10 @@
   .menu-wrapper a {
     display: none;
   }
+  .banner h1 {
+    font-size: 38px;
+  }
+  .about-wrapper {
+    max-width: 90%;
+  }
 }
