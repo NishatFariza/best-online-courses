@@ -1,11 +1,11 @@
-import Course from "./components/Course/Course";
+import Courses from "./components/Courses/Courses";
 import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header></Header>
-      <Course></Course>
+      <Courses></Courses>
     </div>
   );
 }

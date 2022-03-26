@@ -2,18 +2,14 @@
 
 /*=================== navbar style ================== */
 .navbar {
-  background-color: rgb(201, 200, 200);
-}
-.nav-wrapper {
-  max-width: 1170px;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem 0;
+  background-color: rgb(201, 200, 200);
 }
-.nav-wrapper img {
-  width: 100px;
+.navbar img {
+  width: 10%;
 }
 
 .menu-wrapper a {
