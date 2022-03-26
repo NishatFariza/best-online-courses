@@ -40,7 +40,9 @@
   transition: 0.6s;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
+
 .reset-btn:hover {
   background-color: #d82148;
   color: #ffffff;
@@ -53,6 +55,7 @@
   transition: 0.6s;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
 .random-btn:hover {
   background-color: #c18107;

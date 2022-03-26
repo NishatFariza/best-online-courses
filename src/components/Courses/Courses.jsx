@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Carts from '../Carts/Carts';
 import Course from '../Course/Course';
 import './Courses.css'
 
@@ -15,7 +16,8 @@ const Courses = () => {
     const handleAddToCart = (course) =>{
         //   console.log(course);
           setCart([...cart, course])
-          console.log(cart);
+        //   console.log(cart);
+
     }
 
 
@@ -40,6 +42,9 @@ const Courses = () => {
                     <div className='cart-wrapper'>
                         <h4>Your Course</h4>
                         <div>
+                            {
+                                cart.map(cart => <Carts cart={cart} key={cart.id}></Carts>)
+                            }
                         <button className='reset-btn'>Reset All</button>
                         <button className='random-btn'>Random</button>
                         </div>
