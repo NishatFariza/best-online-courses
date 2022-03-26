@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid #777;
+  padding: 20px 10px;
+  transition: 0.7s;
+}
+.card:hover {
+  border: 2px solid #c18107;
+}
+
+.course-info {
+  padding: 15px 10px;
+}
+
+.course-info {
+}

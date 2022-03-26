@@ -12,19 +12,26 @@ const Courses = () => {
     }, [])
     return (
         <div>
-            <div className='banner'>
-                <h1>Start learning from<br/>
-                   <span className='orange-color'>The world’s best online courses</span></h1>
+               <div className='banner'>
+                        <h1>Start learning from<br/>
+                        <span className='orange-color'>The world’s best online courses</span></h1>
 
+                </div>
+                <div className='course'>
+                    <div className='course-wrapper'>
+                    {
+                        courses.map(course => <Course course={course}
+                        key={course.id}
+                        >
 
-                {
-                    courses.map(course => <Course course={course}
-                    key={course.id}
-                    >
-
-                    </Course>)
-                }
-            </div>
+                        </Course>)
+                    }
+                    </div>
+                    <div className='cart-wrapper'>
+                        <h2>This is cart</h2>
+                    </div>
+                </div>
+            
 
         </div>
     );
