@@ -11,7 +11,7 @@ const Courses = () => {
         .then(data => setCourses(data))
     }, [])
     return (
-        <div>
+        <div className='main-wrapper'>
                <div className='banner'>
                         <h1>Start learning from<br/>
                         <span className='orange-color'>The world’s best online courses</span></h1>

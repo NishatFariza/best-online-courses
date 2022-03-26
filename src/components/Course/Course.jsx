@@ -9,9 +9,9 @@ const Course = (props) => {
             <div className='image-wrap'><img src={picture} alt="" /></div>
             <div className='course-info'>
             <h2>{name}</h2>
-            <p>{balance}</p>
-            <button>Add To Cart</button>
+            <p>Price: {balance}</p>
             </div>
+            <button className='cart-btn'>Add To Cart</button>
         </div>
     );
 };
